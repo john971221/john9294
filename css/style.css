@@ -50,7 +50,7 @@ main {
 
 main .slidebanner {background:#151515;}
 
-main banner .slidebanner img {
+main .banner .slidebanner img {
     position: absolute;
     width: 822px;
     height: 100%;
