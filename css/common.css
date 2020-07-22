@@ -142,7 +142,7 @@ header .menutrigger a span:nth-of-type(3) {
 }
 
 header .menutrigger .active span:nth-of-type(1) {
-    transform: translateY(10px)rotate(225deg);
+    transform: translateX(10px)rotate(225deg);
 }
 
 header .menutrigger .active span:nth-of-type(2) {
@@ -333,7 +333,7 @@ input::placeholder {
     }
 
     header .menutrigger .active span:nth-of-type(1) {
-        transform: translateY(6px)rotate(225deg);
+        transform: translateY(8px)rotate(225deg);
     }
 
     header .menutrigger .active span:nth-of-type(2) {
@@ -343,7 +343,7 @@ input::placeholder {
 
 
     header .menutrigger .active span:nth-of-type(3) {
-        transform: translateY(-6px) rotate(-225deg);
+        transform: translateY(-8px) rotate(-225deg);
     }
     .log_in {
         width: 100%;
@@ -430,7 +430,7 @@ input::placeholder {
     }
 
     header .menutrigger .active span:nth-of-type(1) {
-        transform: translateY(8px)rotate(225deg);
+        transform: translateY(6px)rotate(225deg);
     }
 
     header .menutrigger .active span:nth-of-type(2) {
@@ -440,7 +440,7 @@ input::placeholder {
 
 
     header .menutrigger .active span:nth-of-type(3) {
-        transform: translateY(-8px) rotate(-225deg);
+        transform: translateY(-6px) rotate(-225deg);
     }
 /*Login*/
     .log_in {
