@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Brave one</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="shortcut icon" href="img/braveman.ico">
+    <link href="css/bootstrap.css" rel="stylesheet" type="text/css">
+    <link href="css/gallery2.css" rel="stylesheet" type="text/css">
+
+</head>
+
+<body>
+
+    <div class="bgfont">
+        <h2>Culă</h2>
+    </div>
+
+    <header class="pad">
+        <nav class="menutrigger">
+            <a href="#">
+                <span></span>
+                <span></span>
+                <span></span></a>
+            <div class="burger">
+                <a href="Gallery.html">Gallery & artist</a>
+                <a href="Exhibition.html">Exhibition</a>
+            </div>
+        </nav>
+        <div class="logo">
+            <a href="Index.html"><h1>Culă</h1></a>
+        </div>
+        <div class="left-button">
+            <input type=radio name="miao" id="miao">
+            <input type=radio name="miao" id="gtfo">  
+               <div class="logbtn">
+                <div class=log_in>
+                   <label for="gtfo">Exit</label>
+                    <input type="mail" name="email" id="email" placeholder="#Your email address" autocomplete="off" maxlength="30">
+                    <input type="password" name="password" placeholder="#Your passward" maxlength="16">
+                    <input type="submit" name="Log in" value="Log in">
+                </div>
+            </div>
+            <label for="miao">log in</label>
+            <a class="mypage" href="#"><img src="img/ic_mypage.png"></a>
+        </div>
+
+
+    </header>
+
+    <main>
+       <input class="bb" type="button" value="Exit" onclick="history.back();">
+        <div class="slide">
+            <input type="radio" name="pos" id="pos1" checked>
+            <input type="radio" name="pos" id="pos2">
+            <input type="radio" name="pos" id="pos3">
+
+
+
+            <div class="gal">
+                <section>
+                    <a class="col-md-4"><img src="img/Isolated.jpg"></a>
+                    <a class="col-md-4"><img src="img/Theone.jpg"></a>
+                    <a class="col-md-4"><img src="img/Lake%20takapo.jpg"></a>
+                </section>
+                <section>
+                    <a href="Sile'it%20war.html"class="col-md-4"><img src="img/Sile'it%20battle.jpg"></a>
+                    <a href="Moscow.html" class="col-md-4"><img src="img/Neo-moscow.jpg"></a>
+                    <a class="col-md-4"><img src="img/Transmilenio.jpg"></a>
+                </section>
+                <section>
+                    <a class="col-md-4"><img src="img/Isolated.jpg"></a>
+                    <a class="col-md-4"><img src="img/Theone.jpg"></a>
+                    <a class="col-md-4"><img src="img/Transmilenio.jpg"></a>
+                </section>
+            </div>
+
+            <div class="indie">
+                <label for="pos1">1</label>
+                <label for="pos2">2</label>
+                <label for="pos3">3</label>
+
+                
+            </div>
+        </div>
+
+
+        <script>
+            const nav = document.querySelector('.menutrigger > a');
+
+            const div = document.querySelector('.burger');
+
+
+            nav.addEventListener('click', function() {
+                nav.classList.toggle('active');
+                div.classList.toggle('active');
+            });
+        </script>
+    </main>
+</body></html>

@@ -1,0 +1,203 @@
+@import url('common.css');
+
+.bg {
+    line-height: 250px;
+    transform: rotate(23.5deg) translateY(-130px);
+}
+
+.bg h2,
+span {
+    color: black;
+}
+
+/*
+.bg h1:nth-of-type(1){transform:translateX(-2000px)}
+.bg h1:nth-of-type(2){transform:translateX(2000px)}
+.bg h1:nth-of-type(3){transform:translateX(-2000px)}
+.bg h1:nth-of-type(4){transform:translateX(2000px)}
+.bg h1:nth-of-type(5){transform:translateX(-2000px);animation}*/
+.bg h2:nth-of-type(odd) {
+    transform: translateX(-100px);
+}
+
+.bg h2:nth-of-type(even) {
+    transform: translateX(100px);
+}
+
+.bg h2:nth-of-type(odd) {
+    animation: dddj 4s 0s;
+}
+
+.bg h2:nth-of-type(even) {
+    animation: dddz 4s 0s;
+}
+
+@keyframes dddj {
+    from {
+        transform: translateX(-2000px);
+    }
+
+    to {
+        transform: translateX(-100px);
+    }
+}
+
+@keyframes dddz {
+    from {
+        transform: translateX(2000px);
+    }
+
+    to {
+        transform: translateX(100px);
+    }
+}
+
+main {
+    height: 100%;
+    width: 100%;
+    margin-left: 121px;
+}
+
+main .onerow {
+    margin: 0 auto;
+}
+
+main > div .col-md-3 {
+    display: inline-block;
+    background: RGB(0, 0, 0, 0.4)
+}
+
+main > div .col-md-3 .prfile {
+    border-radius: 100%;
+    width: 200px;
+    float: left;
+}
+
+main > div .col-md-3 a img {
+    width: 25px;
+}
+
+main > div .col-md-3 .textar {
+    width: 43%;
+    float: right;
+    display: flex;
+    flex-direction: column;
+    vertical-align: middle;
+    align-content: center;
+    margin-top: 20px;
+}
+
+main > div .col-md-3 .sns {
+    display: inline-block;
+    padding: 8px 10px;
+    height: 189px;
+
+}
+
+main > div .col-md-3 .Smicon {}
+
+main .col-md-10 {
+    display: flex;
+    align-content: center;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 90px
+}
+
+main .gal {
+    transform-style: preserve-3d;
+    position: relative;
+}
+
+
+main .gal a {
+    width: 300px;
+    height: 420px;
+    display: inline-block;
+}
+
+main .gal img {
+    width: 300px;
+    box-shadow: 5px 3px 5px 3px #000;
+    transition: .7s;
+    opacity: 1;
+}
+
+
+main .gal:hover .gal2 img {
+    margin-left: 240px;
+}
+
+main .gal:hover .gal3 img {
+    margin-left: 480px;
+}
+
+main .gal .gal1 a img:hover {
+    transform: scale(1.07);
+}
+
+main .gal .gal2 a img:hover {
+    transform: scale(1.07);
+}
+
+main .gal .gal3 a img:hover {
+    transform: scale(1.07);
+}
+
+
+main .gal .btn {
+    position: absolute;
+    top: 0%;
+    left: 37%;
+    opacity: 0;
+    transition: .7s;
+}
+
+main .gal:hover .btn {
+    left: 83%;
+    opacity: 1;
+}
+
+
+@media (min-width : 481px) and (max-width : 1280px) {
+    body {display: contents;}
+    main{margin-left: 0px;}
+    main > div .col-md-3{
+    display: contents;
+    }
+    main .col-md-10 {
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+    main .textar {
+        text-align: center;
+    }
+    main .gal:hover .gal2 img {
+    margin-left: 0;
+}
+
+    main .gal:hover .gal3 img {
+    margin-left: 0;
+}
+
+    main .gal .gal1 a img:hover {
+    transform: scale(1);
+}
+
+    main .gal .gal2 a img:hover {
+    transform: scale(1);
+}
+
+    main .gal .gal3 a img:hover {
+    transform: scale(1);
+}
+    main .sns{width:70%}
+    .pada {
+        width: 30%;
+    }
+
+    
+}
+@media (max-width : 480px);
+

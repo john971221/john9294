@@ -1,0 +1,137 @@
+@import url(common.css);
+
+main {
+    width: 90%;
+    margin: 0 auto;
+    border: 5px solid #fff;
+    padding: 80px
+}
+
+
+main banner {
+    text-align: center;
+}
+
+main banner h2 {
+    font-size: 180pt;
+}
+
+main banner h2:after {
+    content: 'JULY';
+    position: absolute;
+    left: 35%;
+    color: blue;
+    z-index: -1;
+}
+
+main banner .timeline {
+    position: relative;
+    display: flex;
+    width: 50%;
+    align-items: baseline;
+    margin: 0 auto;
+    border-bottom: 3px solid #fff;
+    margin-bottom: 40px;
+}
+
+main banner .timeline span {
+    content: '';
+    width: 10px;
+    height: 10px;
+    background: blue;
+    border-radius: 60%;
+}
+
+main banner .timeline p {
+    float: left;
+    padding-right: 59%
+}
+
+main banner .timeline input {
+    background: transparent;
+    border: none;
+}
+
+main .cont {
+    width: 60%;
+    height: auto;
+    background: #fff;
+    margin: 0 auto;
+    padding: 2% 4%;
+}
+
+main .cont input {
+    display: none;
+}
+
+main .cont .exh1,
+.exh2,
+.exh3,
+.exh4,
+.exh5 {
+    display: none;
+}
+
+#pos1:checked ~ .exh1 {
+    display: block;
+}
+
+#pos2:checked ~ .exh2 {
+    display: block;
+}
+
+#pos3:checked ~ .exh3 {
+    display: block;
+}
+
+#pos4:checked ~ .exh4 {
+    display: block;
+}
+
+#pos5:checked ~ .exh5 {
+    display: block;
+}
+
+
+main .cont h2 {
+    color: #000;
+    border-bottom: 3px solid #000;
+    display: inline;
+    padding-bottom: 5px;
+    font-size: 20pt;
+}
+
+main .cont p {
+    color: #000;
+    font-size: 15pt;
+}
+
+main .cont img {
+    width: 100%
+}
+
+main .cont .uimg {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-content: center;
+    align-items: center;
+    padding-top: 15px;
+}
+
+main .cont .uimg label {
+    height: 100%;
+    width: 19%;
+}
+
+main .cont .uimg label img {
+    width: 100%;
+    box-shadow: 2px 2px 2px 2px rgba(0, 0, 0, 0.3);
+    transition: .5s;
+}
+
+main .cont .uimg label img:hover{transform: scale(1.1);} 
+
+@media (max-width:1430px){
+    
+}

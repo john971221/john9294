@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Healer</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    
+    <link rel="shortcut icon" href="img/healer.ico">
+    
+    <link href="css/bootstrap.css" rel="stylesheet" type="text/css">
+    
+    <link href="css/sileitwar.css" rel="stylesheet" type="text/css">
+</head>
+<body>
+  <header class="pad">
+       <input type=radio name="miao" id="gtfo">
+        <nav class="menutrigger">
+            <a href="#">
+                <span></span>
+                <span></span>
+                <span></span></a>
+            <div class="burger">
+                <a href="Gallery.html">Gallery & artist</a>
+                <a href="Exhibition.html">Exhibition</a>
+            </div>
+        </nav>
+        <div class="logo">
+            <a href="Index.html"><h1>Culă</h1></a>
+        </div>
+        <div class="left-button">
+            <input type=radio name="miao" id="miao">
+            <input type=radio name="miao" id="gtfo">  
+               <div class="logbtn">
+                <div class=log_in>
+                   <label for="gtfo">Exit</label>
+                    <input type="mail" name="email" id="email" placeholder="#Your email address" autocomplete="off" maxlength="30">
+                    <input type="password" name="password" placeholder="#Your passward" maxlength="16">
+                    <input type="submit" name="Log in" value="Log in">
+                </div>
+            </div>
+            <label for="miao">log in</label>
+            <a class="mypage" href="#"><img src="img/ic_mypage.png"></a>
+        </div>
+          
+<input class="bb" type="button" value="Exit" onclick="history.back();">
+
+
+    </header>
+    
+    <main>
+        <div class="upban">
+            <p><span>D</span>ed<span>i</span>ca<span>te</span>d <span>t</span>o all med<span>i</span>cal sta<span>ff</span>s</p>
+            <h2><span>Th</span>e Si<span>l</span>e'<span>i</span>t <span>B</span>att<span>l</span>e</h2>
+            <img src="img/cov19/2.jpg">
+        </div>
+        
+        <div class="imgs">
+           <h2> <span>Oh</span>, wonder!
+                <span>How</span> many goodly creatures are there here!
+                <span>How</span> beauteous mankind is! 
+                <p>Brave new world ,  by  Aldous Leonard Huxley</p></h2>
+           
+            <img src="img/cov19/3.jpg">
+            <img src="img/cov19/4.jpg">
+            <img src="img/cov19/5.jpg">
+            <h2>Because this is almost a war-like situation, doctors of all departments and specialties are mobilized for COVID-19 duty
+            And no one left their duty</h2>
+            <img src="img/cov19/6.jpg">
+            <img src="img/cov19/7.jpg">
+            <img src="img/cov19/8.jpg">
+            <img src="img/cov19/9.jpg">
+            <h2>Nurses suffered from labor shortage,dehydration and it reminds us we can't retreat</h2>
+            <img src="img/cov19/10.jpg">
+            <img src="img/cov19/11.jpg">
+            <h2>Dedicated to medical staffs
+            who stand against COVID-19</h2>
+            <img src="img/cov19/1.jpg">
+            <h2>Thank You for Your dedication</h2>
+        </div>
+    </main>
+    
+
+    
+    
+    
+    
+    
+    
+        <script>
+            const nav = document.querySelector('.menutrigger > a');
+
+            const div = document.querySelector('.burger');
+
+
+            nav.addEventListener('click', function() {
+                nav.classList.toggle('active');
+                div.classList.toggle('active');
+            });
+        </script>
+</body>
+</html>

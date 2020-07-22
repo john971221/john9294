@@ -1,0 +1,147 @@
+@import url('common.css');
+
+
+body {
+    overflow: hidden;
+    height: 100vh;
+}
+
+body .bg {
+    position: fixed;
+    z-index: -1;
+    width: 150%;
+    white-space: pre-line;
+    overflow: hidden;
+    transform: translateY(-80px);
+}
+
+body .bg p {
+    margin: 0 auto;
+    font-size: 150px;
+    text-transform: uppercase;
+    color: black;
+    text-align: justify;
+    line-height: 0;
+}
+
+body .bg span {
+    color: black;
+}
+
+body .bg p:nth-of-type(odd) {
+    transform: translateX(-200px)
+}
+
+body .bg p:nth-of-type(even) {
+    transform: translateX(px)
+}
+
+header {
+    position: fixed;
+}
+
+main {
+    position: relative;
+    height: 100%;
+    width: 822px;
+    margin: 0 auto;
+    transform-style: preserve-3d;
+}
+
+main .slidebanner {background:#151515;}
+
+main banner .slidebanner img {
+    position: absolute;
+    width: 822px;
+    height: 100%;
+    z-index: 1;
+    transition:1s
+}
+/*
+.slidebanner img:nth-of-type(1){animation:wtf 30s .5s linear infinite alternate}
+@keyframes wtf {
+    0%,20%{transform:translateZ(20px); opacity:0.8;}
+    20%,100%{transform:translateZ(0px); opacity:0;}
+}
+
+.slidebanner img:nth-of-type(2){animation:sld 30s 2s linear infinite alternate}
+@keyframes sld {
+    0%,20%{transform:translateZ(0px); opacity:0;}
+    20%,40%{transform:translateZ(20px); opacity:0.8;}
+    40%,100%{transform:translateZ(0px); opacity:0;}
+}
+
+.slidebanner img:nth-of-type(3){animation:ald 30s 2s linear infinite alternate}
+@keyframes ald {
+    0%,40%{transform:translateZ(0px); opacity:0;}
+    40%,60%{transform:translateZ(20px); opacity:0.8;}
+    60%,100%{transform:translateZ(0px); opacity:0;}
+}
+
+.slidebanner img:nth-of-type(4){animation:old 30s 2s linear infinite alternate}
+@keyframes old {
+    0%,60%{transform:translateZ(0px); opacity:0;}
+    60%,80%{transform:translateZ(20px); opacity:0.8;}
+    80%,100%{transform:translateZ(0px); opacity:0;};
+}
+
+.slidebanner img:nth-of-type(5){animation:yad 30s 2s linear infinite alternate}
+@keyframes yad {
+    0%,80%{transform:translateZ(0px); opacity:0;}
+    80%,100%{transform:translateZ(20px); opacity:0.8;}
+}
+*/
+main .centf h2 {
+    margin: 0 30px;
+    font-size: 72px;
+    color: white;
+    position: absolute;
+    z-index: 2;
+    white-space: pre-line;
+    left: 0;
+    top: 35%;
+    animation: hey 2s forwards;
+    opacity: 0;
+}
+
+main .centf h2:nth-of-type(2) {
+    margin: 0 30px;
+    font-size: 72px;
+    color: white;
+    position: absolute;
+    z-index: 1;
+    white-space: pre-line;
+    left: 0;
+    top: 43%;
+    animation: hey 3s forwards;
+}
+
+main .centf h2:nth-of-type(3) {
+    margin: 0 30px;
+    font-size: 72px;
+    color: white;
+    position: absolute;
+    z-index: 1;
+    white-space: pre-line;
+    left: 0;
+    top: 51%;
+    animation: hey 4s forwards
+}
+
+@keyframes hey {
+    50% {
+        transform: translateX(-40px);
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1
+    }
+}
+
+
+main .centf span {
+    font-style: italic;
+    color: white;
+    font-size: inherit;
+}

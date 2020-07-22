@@ -1,0 +1,204 @@
+@import url(common.css);
+
+header {
+    background: #013e39;
+}
+
+
+main {
+    width: 100%;
+}
+
+main .upban {
+    height: 600px;
+    background: #013e39;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-content: center;
+    align-items: center;
+    position: relative;
+}
+
+main .upban span {
+    font-style: italic;
+}
+
+main .upban p {
+    letter-spacing: 10px;
+    position: absolute;
+    top: 10%
+}
+
+main .upban h2 {
+    font-size: 120pt;
+    z-index: 1;
+}
+
+main .upban img {
+    position: absolute;
+    top: 330px;
+    display: table;
+}
+
+
+
+main .imgs {
+    display: flex;
+    align-content: center;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+main .imgs h2:nth-of-type(1) {
+    padding-top: 50%;
+}
+
+main .imgs h2:nth-of-type(5) {
+    padding-bottom: 10%;
+}
+
+main .imgs h2 {
+    color: #013e39;
+    font-size: 5em;
+    white-space: pre-line
+}
+
+main .imgs h2 span {
+    color: #013e39;
+    font-style: italic;
+}
+
+main .imgs h2 p {
+    font-size: .5em;
+    font-style: italic;
+    color: #717171;
+}
+
+main .imgs img {
+    padding: 10% 0;
+}
+
+.bb {
+    position: fixed;
+    right: 3%;
+    bottom: 5%;
+}
+@media (max-width:1430px) {
+    main .upban {
+        height: auto;
+        background: #013e39;
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        align-content: center;
+        align-items: center;
+        position: relative;
+        text-align: center;
+    }
+
+    main .upban h2 {
+        font-size: 70pt;
+        z-index: 1;
+    }
+
+    main .upban p {
+        letter-spacing: 3px;
+        position: static;
+        top: 10%
+    }
+
+    main .upban img {
+        position: static;
+        top: 330px;
+        display: table;
+        max-width: 100%
+    }
+
+    main .imgs h2:nth-of-type(1) {
+        padding-top: 10%;
+    }
+
+    main .imgs h2 {
+        color: #013e39;
+        font-size: 30pt;
+        white-space: pre-line;
+    }
+
+    main .imgs h2 span {
+        color: #013e39;
+        font-style: italic;
+    }
+
+    main .imgs h2 p {
+        font-size: .5em;
+        font-style: italic;
+        color: #717171;
+    }
+
+    main .imgs img {
+        padding: 10% 0;
+        width:100%;
+    }
+}
+
+
+
+@media (max-width:480px) {
+    main .upban {
+        height: auto;
+        background: #013e39;
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        align-content: center;
+        align-items: center;
+        position: relative;
+        text-align: center;
+    }
+
+    main .upban h2 {
+        font-size: 30pt;
+        z-index: 1;
+    }
+
+    main .upban p {
+        letter-spacing: 3px;
+        position: static;
+        top: 10%
+    }
+
+    main .upban img {
+        position: static;
+        top: 330px;
+        display: table;
+        max-width: 100%
+    }
+
+    main .imgs h2:nth-of-type(1) {
+        padding-top: 10%;
+    }
+
+    main .imgs h2 {
+        color: #013e39;
+        font-size: 15pt;
+        white-space: pre-line;
+    }
+
+    main .imgs h2 span {
+        color: #013e39;
+        font-style: italic;
+    }
+
+    main .imgs h2 p {
+        font-size: .5em;
+        font-style: italic;
+        color: #717171;
+    }
+
+    main .imgs img {
+        padding: 10% 0;
+        width:100%;
+    }
+}

@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    
+    <link href="css/bootstrap.css" rel="stylesheet" type="text/css">
+    
+    <link href="css/Moscow.css" rel="stylesheet" type="text/css">
+</head>
+<body>
+  <header class="pad">
+       <input type=radio name="miao" id="gtfo">
+        <nav class="menutrigger">
+            <a href="#">
+                <span></span>
+                <span></span>
+                <span></span></a>
+            <div class="burger">
+                <a href="Gallery.html">Gallery & artist</a>
+                <a href="Exhibition.html">Exhibition</a>
+            </div>
+        </nav>
+        <div class="logo">
+            <a href="Index.html"><h1>Culă</h1></a>
+        </div>
+        <div class="left-button">
+            <input type=radio name="miao" id="miao">
+            <input type=radio name="miao" id="gtfo">  
+               <div class="logbtn">
+                <div class=log_in>
+                   <label for="gtfo">Exit</label>
+                    <input type="mail" name="email" id="email" placeholder="#Your email address" autocomplete="off" maxlength="30">
+                    <input type="password" name="password" placeholder="#Your passward" maxlength="16">
+                    <input type="submit" name="Log in" value="Log in">
+                </div>
+            </div>
+            <label for="miao">log in</label>
+            <a class="mypage" href="#"><img src="img/ic_mypage.png"></a>
+        </div>
+          
+<input class="bb" type="button" value="Exit" onclick="history.back();">
+
+
+    </header>
+    
+    <main>
+       <h1><span>NEO</span>-MOSCOW</h1>
+       <h1><span>NEO</span>-MOSCOW</h1>
+        <div class="upban">
+            <p>Bl<span>a</span>c<span>k</span> & Ye<span>ll</span>o<span>w</span>
+            <h2>NEO - MOSCOW</h2>
+            <img src="img/Neo%20moscow/17.jpg">
+        </div>
+        
+        <div class="imgs">
+
+           <h2>○Days◑</h2>
+            <img src="img/Neo moscow/1.jpg">
+            <img src="img/Neo moscow/2.jpg">
+            <img src="img/Neo moscow/3.jpg">
+            <img src="img/Neo%20moscow/4.jpg">
+            <img src="img/Neo%20moscow/5.jpg">
+            <img src="img/Neo%20moscow/6.jpg">
+            <h2>◑Afternoon◐</h2>
+            <img src="img/Neo%20moscow/7.jpg">
+            <img src="img/Neo%20moscow/8.jpg">
+            <img src="img/Neo%20moscow/9.jpg">
+            <img src="img/Neo%20moscow/10.jpg">
+            <h2>◐Night●</h2>
+            <img src="img/Neo%20moscow/11.jpg">
+            <img src="img/Neo%20moscow/12.jpg">
+            <img src="img/Neo%20moscow/13.jpg">
+            <img src="img/Neo%20moscow/14.jpg">
+            <img src="img/Neo%20moscow/15.jpg">
+            <img src="img/Neo%20moscow/16.jpg">
+            <img src="img/Neo%20moscow/17.jpg">
+            <img src="img/Neo%20moscow/18.jpg">
+ 
+
+        </div>
+    </main>
+    
+
+    
+    
+    
+    
+    
+    
+        <script>
+            const nav = document.querySelector('.menutrigger > a');
+
+            const div = document.querySelector('.burger');
+
+
+            nav.addEventListener('click', function() {
+                nav.classList.toggle('active');
+                div.classList.toggle('active');
+            });
+        </script>
+</body>
+</html>

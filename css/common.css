@@ -1,0 +1,468 @@
+html {
+    background-color: #0f0f0f;
+
+}
+@font-face {
+    font-family: 'roxborough_cf_boldbold';
+    src: url('roxboroughcf-bold-webfont.woff2') format('woff2'),
+         url('roxboroughcf-bold-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+
+
+
+@font-face {
+    font-family: 'roxborough_cf_regularregular';
+    src: url('roxboroughcf-regular-webfont.woff2') format('woff2'),
+         url('roxboroughcf-regular-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+
+
+html,
+body {
+    margin: 0;
+    color: white;
+}
+
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    margin: 0;
+    padding: 0;
+}
+
+ul,
+li {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+
+* {
+    box-sizing: border-box;
+    color: #fff;
+    font-family: 'Roxborough CF';
+}
+
+.Ek {
+    font-family: 'Ekster-Regular';
+}
+
+.Ekb {
+    font-family: 'Ekster-Bold';
+}
+
+.pad {
+    padding: 55px 51px;
+}
+
+.pada {
+    padding: 25px 25px;
+}
+
+.mainmar {
+    margin: 0 121px;
+}
+
+.w300 {
+    width: 300px;
+}
+
+/*백그라운드폰트 장식용*/
+.ital span {
+    font-style: italic;
+}
+
+.bgfont {
+    font-size: 80pt;
+    position: fixed;
+    z-index: -1;
+}
+
+/*header   
+<header class="pad">
+        <div class="menutrigger">
+            <a href="#">
+               <span></span>
+                <span></span>
+                <span></span></a>
+        </div>
+        <div class="logo">
+            <h1>Culă</h1>
+        </div>
+        <div class="left-button"><a class="login" href="#">log in</a><a class="mypage" href="#"><img src="img/ic_mypage.png"></a></div>
+    </header>*/
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: top;
+    width: 100%;
+    z-index: 2;
+    position: relative;
+}
+
+header .logo a {
+    text-decoration: none;
+}
+
+header .menutrigger {
+    position: relative;
+}
+
+header .menutrigger a span {
+    width: 40px;
+    height: 3px;
+    background: #fff;
+    display: block;
+    transition: .6s;
+}
+
+header .menutrigger a span:nth-of-type(2) {
+    margin-top: 7px;
+}
+
+header .menutrigger a span:nth-of-type(3) {
+    margin-top: 7px;
+}
+
+header .menutrigger .active span:nth-of-type(1) {
+    transform: translateY(10px)rotate(225deg);
+}
+
+header .menutrigger .active span:nth-of-type(2) {
+    opacity: 0;
+}
+
+
+
+header .menutrigger .active span:nth-of-type(3) {
+    transform: translateY(-10px) rotate(-225deg);
+}
+
+
+header .left-button .mypage img {
+    height: 30px;
+}
+
+header .left-button {
+    width: 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    font-size: 20px;
+}
+
+header .logo h1 {
+    margin: 0 0 0 0;
+}
+
+
+/*버거메뉴*/
+header .menutrigger {
+    padding-bottom: 30px;
+    text-align: center;
+}
+
+header .menutrigger .burger {
+    transform: translateX(-80px);
+    opacity: 0;
+    transform-origin: 10%;
+    transition: .8s;
+    border: 3px solid #000;
+    position: absolute;
+    top: 60px;
+    width: 300px;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    font-size: 20pt;
+    line-height: 60pt;
+}
+
+header .menutrigger .burger a {
+    transition: .8s;
+}
+
+
+
+.menutrigger .burger.active {
+    opacity: 1;
+    transform: translateX(0px);
+}
+
+
+
+
+
+
+
+/*Login*/
+#miao:checked ~ .logbtn .log_in {
+    display: flex;
+    width: 50%;
+    right: 25%;
+    top: 100%;
+}
+
+#gtfo:checked ~ .logbtn .log_in {
+    display: none;
+}
+
+
+#gtfo,
+#miao {
+    display: none !important;
+}
+
+
+
+.log_in {
+    display: none;
+    align-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin: auto;
+    padding-top: 150px;
+    background: #0f0f0f;
+    z-index: 4;
+    position: absolute;
+
+}
+
+.log_in input {
+    background: transparent;
+    text-align: center;
+    font-style: italic;
+    border-style: none;
+    font-size: 60pt;
+    color: #000;
+    border-bottom: 3px solid #000;
+    margin: 20px 0;
+}
+
+.log_in input:nth-of-type(3) {
+    border: 3px solid #000;
+    padding: 5px 10px;
+    font-size: 30pt;
+    margin-bottom: 40px;
+
+}
+
+input::placeholder {
+    color: #000
+}
+
+.bb {
+    background: transparent;
+    border: none;
+    padding: 0 0 15px 100px;
+}
+
+
+@media (max-width:1430px) {
+    .pad {
+        padding: 30px 35px;
+    }
+
+    header .menutrigger a span {
+        width: 30px;
+        height: 2px;
+        background: #fff;
+        display: block;
+        transition: .6s;
+    }
+
+    header .menutrigger a span:nth-of-type(2) {
+        margin-top: 6px;
+    }
+
+    header .menutrigger a span:nth-of-type(3) {
+        margin-top: 6px;
+    }
+
+    header .logo {
+        font-size: 15px;
+    }
+
+    header .left-button label {
+        font-size: 13px;
+    }
+
+    header .left-button .mypage {
+        display: none;
+    }
+
+
+    header .logo h1 {
+        margin: 0 0 0 100%;
+    }
+
+    header .menutrigger .burger {
+        transform: translateX(-80px);
+        opacity: 0;
+        transform-origin: 10%;
+        transition: .8s;
+        border: 3px solid #757575;
+        position: absolute;
+        top: 40px;
+        width: 600%;
+        height: auto;
+        display: flex;
+        flex-direction: column;
+        font-size: 10pt;
+        line-height: 30pt;
+        background: #151515;
+
+    }
+
+    header .menutrigger .active span:nth-of-type(1) {
+        transform: translateY(6px)rotate(225deg);
+    }
+
+    header .menutrigger .active span:nth-of-type(2) {
+        opacity: 0;
+    }
+
+
+
+    header .menutrigger .active span:nth-of-type(3) {
+        transform: translateY(-6px) rotate(-225deg);
+    }
+    .log_in {
+        width: 100%;
+    }
+
+
+    .log_in input {
+        background: transparent;
+        text-align: center;
+        font-style: italic;
+        border-style: none;
+        font-size: 30pt;
+        color: #000;
+        border-bottom: 3px solid #000;
+        margin: 20px 0;
+        width:100%;
+    }
+
+    .log_in input:nth-of-type(3) {
+        border: 3px solid #000;
+        padding: 5px 10px;
+        font-size: 30px;
+    }
+
+}
+
+
+
+
+@media (max-width:480px) {
+    .pad {
+        padding: 30px 35px;
+    }
+
+
+    header .menutrigger a span {
+        width: 20px;
+        height: 2px;
+        background: #fff;
+        display: block;
+        transition: .6s;
+    }
+
+    header .menutrigger a span:nth-of-type(2) {
+        margin-top: 4px;
+    }
+
+    header .menutrigger a span:nth-of-type(3) {
+        margin-top: 4px;
+    }
+
+    header .logo {
+        font-size: 10px;
+    }
+
+    header .left-button label {
+        font-size: 8px;
+    }
+
+    header .left-button .mypage {
+        display: none;
+    }
+
+
+    header .logo h1 {
+        margin: 0 0 0 60%;
+    }
+
+    header .menutrigger .burger {
+        transform: translateX(-80px);
+        opacity: 0;
+        transform-origin: 10%;
+        transition: .8s;
+        border: 3px solid #757575;
+        position: absolute;
+        top: 40px;
+        width: 600%;
+        height: auto;
+        display: flex;
+        flex-direction: column;
+        font-size: 10pt;
+        line-height: 30pt;
+        background: #151515;
+
+    }
+
+    header .menutrigger .active span:nth-of-type(1) {
+        transform: translateY(8px)rotate(225deg);
+    }
+
+    header .menutrigger .active span:nth-of-type(2) {
+        opacity: 0;
+    }
+
+
+
+    header .menutrigger .active span:nth-of-type(3) {
+        transform: translateY(-8px) rotate(-225deg);
+    }
+/*Login*/
+    .log_in {
+        width: 100%;
+    }
+
+
+    .log_in input {
+        background: transparent;
+        text-align: center;
+        font-style: italic;
+        border-style: none;
+        font-size: 18pt;
+        color: #000;
+        border-bottom: 3px solid #000;
+        margin: 20px 0;
+        width:100%;
+    }
+
+    .log_in input:nth-of-type(3) {
+        border: 3px solid #000;
+        padding: 5px 10px;
+        font-size: 30px;
+    }
+}
