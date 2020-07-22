@@ -193,6 +193,7 @@ header .menutrigger .burger {
     flex-direction: column;
     font-size: 20pt;
     line-height: 60pt;
+    background:#151515;
 }
 
 header .menutrigger .burger a {
