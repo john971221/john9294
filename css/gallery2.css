@@ -213,12 +213,14 @@ main .indie label:after {
     main .indie {
         text-align: left;
         font-size: 15pt;
-        letter-spacing: 33%;
+        letter-spacing: 0px !important;
+        
     }
 
     main .indie label {
         text-align: center;
-        color: #000;
+        color: #757575;
+        padding-left:11%;
     }
 
     main .indie label:after {
