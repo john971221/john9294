@@ -50,6 +50,12 @@ main .slide .gal section:nth-of-type(3) {
 main .slide .gal section .col-md-4 {
     text-align: center;
 }
+main .slide .gal section .col-md-4:hover img{transform: scale(1.05) translateY(2%);}
+
+main .slide .gal section .col-md-4 img {
+    box-shadow: 5px 3px 5px 3px #000;
+    transition:.7s;
+}
 
 
 #pos1:checked ~ .indie label:nth-of-type(1) {
@@ -115,7 +121,7 @@ main .indie label:after {
 
 /*최 적 화*/
 @media (max-width:1430px) {
-        main {
+    main {
         width: 100%;
         overflow: hidden;
     }
@@ -203,9 +209,11 @@ main .indie label:after {
     #pos3:checked ~ .gal {
         transform: translateX(-66.66666666%);
     }
-    
-    
-    main .indie label:nth-of-type(1){padding-left: 3%;}
+
+
+    main .indie label:nth-of-type(1) {
+        padding-left: 3%;
+    }
 
 
 
@@ -214,13 +222,13 @@ main .indie label:after {
         text-align: left;
         font-size: 15pt;
         letter-spacing: 0px !important;
-        
+
     }
 
     main .indie label {
         text-align: center;
         color: #757575;
-        padding-left:11%;
+        padding-left: 11%;
     }
 
     main .indie label:after {
@@ -230,6 +238,7 @@ main .indie label:after {
 
 }
 }
+
 @media (max-width: 480px) {
     main {
         width: 100%;
@@ -327,7 +336,7 @@ main .indie label:after {
         text-align: left;
         font-size: 10pt;
         letter-spacing: 10%;
-        
+
     }
 
     main .indie label {
@@ -336,10 +345,10 @@ main .indie label:after {
     }
 
     main .indie label:after {
-        content:none;
+        content: none;
     }
-    
-    
+
+
 
 
 }
