@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Healer</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    
+    <link rel="shortcut icon" href="img/healer.ico">
+    
+    <link href="css/bootstrap.css" rel="stylesheet" type="text/css">
+    
+    <link href="css/tropics.css" rel="stylesheet" type="text/css">
+</head>
+<body>
+  <header class="pad">
+       <input type=radio name="miao" id="gtfo">
+        <nav class="menutrigger">
+            <a href="#">
+                <span></span>
+                <span></span>
+                <span></span></a>
+            <div class="burger">
+                <a href="Gallery.html">Gallery & artist</a>
+                <a href="Exhibition.html">Exhibition</a>
+            </div>
+        </nav>
+        <div class="logo">
+            <a href="index.html"><h1>Culă</h1></a>
+        </div>
+        <div class="left-button">
+            <input type=radio name="miao" id="miao">
+            <input type=radio name="miao" id="gtfo">  
+               <div class="logbtn">
+                <div class=log_in>
+                   <label for="gtfo">Exit</label>
+                    <input type="email" name="email" id="email" placeholder="#Your email address" autocomplete="off" maxlength="30">
+                    <input type="password" name="password" placeholder="#Your passward" maxlength="16">
+                    <input type="submit" name="Log in" value="Log in">
+                </div>
+            </div>
+            <label for="miao">log in</label>
+            <a class="mypage" href="#"><img src="img/ic_mypage.png" alt="My page"></a>
+        </div>
+          
+<input class="bb" type="button" value="Exit" onclick="history.back();">
+
+
+    </header>
+    
+    <main>
+        <div class="upban">
+            <p>Seeing is Believing</p>
+            <h2><span>T</span>ro<span>pi</span>cs</h2>
+            <img src="img/tropic/2.jpg">
+        </div>
+        
+        <div class="imgs">
+            <img src="img/tropic/font.jpg">
+            <img src="img/tropic/3.jpg">
+            <img src="img/tropic/6.jpg">
+            <img src="img/tropic/11.jpg">
+            <img src="img/tropic/1.jpg">
+            <img src="img/tropic/7.jpg">
+            <img src="img/tropic/9.jpg">
+            <div class="lastone">
+            <h2><span>T</span>ro<span>pi</span>cs</h2>
+            <img src="img/tropic/8.jpg">
+            <h2><span>b</span>y Ju<span>l</span>ien <span>C</span>o<span>q</span>uentin</h2>
+            </div>
+        </div>
+    </main>
+    
+
+    
+    
+    
+    
+    
+    
+        <script>
+            const nav = document.querySelector('.menutrigger > a');
+
+            const div = document.querySelector('.burger');
+
+
+            nav.addEventListener('click', function() {
+                nav.classList.toggle('active');
+                div.classList.toggle('active');
+            });
+        </script>
+</body>
+</html>
