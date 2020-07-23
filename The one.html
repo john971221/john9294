@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Flower</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link rel="shortcut icon" href="img/healer.ico">
+
+    <link href="css/bootstrap.css" rel="stylesheet" type="text/css">
+
+    <link href="css/The%20one.css" rel="stylesheet" type="text/css">
+</head>
+
+<body>
+    <header class="pad">
+        <input type=radio name="miao" id="gtfo">
+        <nav class="menutrigger">
+            <a href="#">
+                <span></span>
+                <span></span>
+                <span></span></a>
+            <div class="burger">
+                <a href="Gallery.html">Gallery & artist</a>
+                <a href="Exhibition.html">Exhibition</a>
+            </div>
+        </nav>
+        <div class="logo">
+            <a href="index.html">
+                <h1>Culă</h1>
+            </a>
+        </div>
+        <div class="left-button">
+            <input type=radio name="miao" id="miao">
+            <input type=radio name="miao" id="gtfo">
+            <div class="logbtn">
+                <div class=log_in>
+                    <label for="gtfo" id="getback">Exit</label>
+                    <input type="email" name="email" id="email" placeholder="#Your email address" autocomplete="off" maxlength="30">
+                    <input type="password" name="password" placeholder="#Your passward" maxlength="16">
+                    <input type="submit" name="Log in" value="Log in">
+                </div>
+            </div>
+            <label for="miao">log in</label>
+            <a class="mypage" href="#"><img src="img/ic_mypage.png" alt="My page"></a>
+        </div>
+
+        <input class="bb" type="button" value="Exit" onclick="history.back();">
+
+
+    </header>
+
+
+    <main>
+        <div class="upban">
+            <p><span>E</span>XTR<span>A</span>OR<span>D</span>IN<span>A</span>R<span>Y</span> </p>
+            <h2><span>Th</span>e O<span>n</span>e</h2>
+            <img src="img/The one/1.jpg">
+        </div>
+
+        <div class="imgs">
+            <h2> <span>Parents</span> told me,
+               Ain't they so beutiful?
+               They blossom without crying
+               and falls off without crying.
+            <p>once upon a time</p>
+            </h2>
+            <img src="img/The%20one/2.jpg">
+            <h3> <span>T h e</span>  C r e a t i v e s </h3>
+            <img src="img/The%20one/3.jpg">
+            <h3> <span>T h e</span>  R o m a n t i c i s t  </h3>
+            <img src="img/The%20one/4.jpg">
+            <h3> <span>T h e</span>  R o y a l i s t  </h3>
+            <img src="img/The one/5.jpg">
+            <h3> <span>T h e</span>  D r e a m e r </h3>
+            <img src="img/The one/6.jpg">
+            <h3> <span>T h e</span>  C h a r m e r  </h3>
+            <img src="img/The one/7.jpg">
+            <h3> <span>T h e</span>  I d e a l i s t  </h3>
+            <img src="img/The one/8.jpg">
+            <h3> <span>T h e</span>  P u r i s t </h3>
+            <img src="img/The%20one/9.jpg">
+            <h3> <span>T h e</span>  O p t i m i s t </h3>
+        </div>
+    </main>
+
+
+
+
+
+
+
+
+    <script>
+        const nav = document.querySelector('.menutrigger > a');
+
+        const div = document.querySelector('.burger');
+
+
+        nav.addEventListener('click', function() {
+            nav.classList.toggle('active');
+            div.classList.toggle('active');
+        });
+    </script>
+
+</body></html>
