@@ -349,7 +349,17 @@ main .gal:hover .btn {
     left: 83%;
     opacity: 1;
 }
+.bg h2:nth-of-type(odd) {
+    transform: translateX(-800px);
+}
 
-    
-    
-};
+   @keyframes dddj {
+    from {
+        transform: translateX(-2000px);
+    }
+
+    to {
+        transform: translateX(-800px);
+    }
+}
+

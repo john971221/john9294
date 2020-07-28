@@ -53,20 +53,20 @@ main .imgs {
 }
 
 main .imgs img:nth-of-type(1) {
-    padding-top: 55%;
+    padding-top: 80%;
     padding-bottom: 0;
 }
 
 
 main .imgs img {
-    padding-top: 20%;
+    padding-top: 30%;
 }
 
 main .imgs .lastone {
     background: #354b35;
     padding: 5% 100%;
     margin-top: 10%;
-    font-size:30pt;
+    font-size: 30pt;
 }
 
 main .imgs .lastone img {
@@ -76,9 +76,14 @@ main .imgs .lastone img {
 main .imgs .lastone h2 span {
     font-style: italic;
 }
-main .imgs .lastone h2:nth-of-type(1){padding-bottom:2%;}
+
+main .imgs .lastone h2:nth-of-type(1) {
+    padding-bottom: 2%;
+}
+
 main .imgs .lastone h2:nth-of-type(2) {
-    padding-left: 8.5%;padding-top:2%;
+    padding-left: 8.5%;
+    padding-top: 2%;
 }
 
 .bb {
@@ -117,7 +122,10 @@ main .imgs .lastone h2:nth-of-type(2) {
         display: table;
         max-width: 100%
     }
-
+   main .imgs img:nth-of-type(1) {
+        padding-top: 25%;
+        padding-bottom: 5%;
+    }
     main .imgs h2:nth-of-type(1) {
         padding-top: 10%;
     }
@@ -141,16 +149,16 @@ main .imgs .lastone h2:nth-of-type(2) {
     }
 
     main .imgs img {
-        padding: 10% 0;
+        padding: 20% 0;
         width: 100%;
     }
 
     main .imgs .lastone {
-    background: #354b35;
-    padding: 5% 100%;
-    margin-top: 10%;
-    font-size:10pt;
-}
+        background: #354b35;
+        padding: 5% 100%;
+        margin-top: 10%;
+        font-size: 10pt;
+    }
 }
 
 @media (max-width:480px) {
@@ -184,6 +192,11 @@ main .imgs .lastone h2:nth-of-type(2) {
         max-width: 100%
     }
 
+    main .imgs img:nth-of-type(1) {
+        padding-top: 25%;
+        padding-bottom: 5%;
+    }
+
     main .imgs h2:nth-of-type(1) {
         padding-top: 10%;
     }
@@ -206,7 +219,7 @@ main .imgs .lastone h2:nth-of-type(2) {
     }
 
     main .imgs img {
-        padding: 10% 0;
+        padding: 20% 0;
         width: 100%;
     }
 }

@@ -1,0 +1,18 @@
+@import url(common.css);
+
+main{width:100%; display:}
+
+ svg{
+        border:1px solid #000;
+    }
+    svg path{
+        stroke-dasharray:1300px;
+        stroke-dashoffset:1300px;
+        animation: dash 4s forwards;
+    }
+    @keyframes dash{
+        100%{stroke-dashoffset:0px;
+        stroke-dasharray:0px;
+        }
+        
+main .qo,.qt,.qth,.qf,.qfi{width:100%;height:100%;}
