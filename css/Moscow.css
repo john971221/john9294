@@ -1,21 +1,29 @@
 @import url(common.css);
 
+
 header {
     background: #fbc203;
 }
 
+#night h2 {
+    padding-top: 0 !important;
+}
 
 main {
     width: 100%;
 }
 
 main > h1 {
-    font-size: 180pt;
+    font-size: 280pt;
     text-align: center;
 }
 
 main > h1 span {
     font-style: italic;
+    color: transparent;
+}
+
+main > h1:nth-of-type(1) span {
     color: transparent;
 }
 
@@ -26,11 +34,11 @@ main > h1:nth-of-type(1) {
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    -webkit-text-stroke: 5px #ffbc00;
+    -webkit-text-stroke: 5px #0f0f0f;
 }
 
 main > h1:nth-of-type(2) {
-    -webkit-text-stroke: 5px #cd1803;
+    -webkit-text-stroke: 5px #0f0f0f !impiortant;
     color: transparent;
     z-index: -2;
     position: fixed;
@@ -39,8 +47,9 @@ main > h1:nth-of-type(2) {
     transform: translate(-50%, -50%);
 }
 
+
 main .upban {
-    height: 600px;
+    height: 0;
     background: #fbc203;
     display: flex;
     justify-content: center;
@@ -48,6 +57,7 @@ main .upban {
     align-content: center;
     align-items: center;
     position: relative;
+    transition: 1s;
 }
 
 
@@ -59,7 +69,7 @@ main .upban span {
 main .upban p {
     letter-spacing: 10px;
     position: absolute;
-    top: 10%
+    top: 10%;
 }
 
 main .upban h2 {
@@ -69,9 +79,8 @@ main .upban h2 {
 
 main .upban img {
     position: absolute;
-    top: 330px;
-    display: table;
-    max-width:80%;
+    top: 0px;
+    max-width: 80%;
 }
 
 
@@ -84,6 +93,26 @@ main .imgs {
     flex-direction: column;
 }
 
+main .imgs h2:hover {
+    transform: scale(1.2);
+}
+
+main .imgs h2 {
+    color: #fff;
+    font-size: 5em;
+    white-space: pre-line;
+    transition: transform .5s;
+    padding: 5%;
+    transition: .5s;
+}
+
+
+main .imgs h2 span {
+    font-style: normal;
+    color: white;
+    display: none;
+}
+
 main .imgs h2:nth-of-type(1) {
     padding-top: 52%;
 }
@@ -92,16 +121,8 @@ main .imgs h2:nth-of-type(5) {
     padding-bottom: 10%;
 }
 
-main .imgs h2 {
-    color: #fff;
-    font-size: 5em;
-    white-space: pre-line
-}
 
-main .imgs h2 span {
-    color: #013e39;
-    font-style: italic;
-}
+
 
 main .imgs h2 p {
     font-size: .5em;
@@ -111,17 +132,55 @@ main .imgs h2 p {
 
 
 main .imgs img {
-    padding: 10% 0;
-max-width:80%;
+    padding: 15% 0;
+    max-width: 80%;
 }
 
-main .imgs img:last-of-type{width:100%;}
+main .imgs .Days {
+    display: none;
+    text-align: center;
+}
+
+main .imgs .Afternoon {
+    display: none;
+    text-align: center;
+}
+
+main .imgs .Night {
+    display: none;
+    text-align: center;
+}
+
+main .imgs img:last-of-type {
+    width: 100%;
+}
 
 .bb {
     position: fixed;
     right: 3%;
     bottom: 5%;
 }
+
+footer {
+    background: #fbc203;
+    padding: 5% 10%;
+    text-align: center;
+    position: relative;
+}
+
+footer img {
+    width: 100%;
+}
+
+footer h2 {
+    white-space: pre-line;
+    position: absolute;
+    top: 18%;
+    left: 37%;
+    line-height: 150%;
+    font-size: 4.5em;
+}
+
 @media (max-width:1430px) {
     main .upban {
         height: auto;
@@ -175,8 +234,8 @@ main .imgs img:last-of-type{width:100%;}
     }
 
     main .imgs img {
-        padding: 10% 0;
-        width:100%;
+        padding: 10% auto;
+        width: 100%;
     }
 }
 
@@ -236,6 +295,6 @@ main .imgs img:last-of-type{width:100%;}
 
     main .imgs img {
         padding: 10% 0;
-        width:100%;
+        width: 100%;
     }
 }

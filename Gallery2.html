@@ -7,7 +7,7 @@
     <link rel="shortcut icon" href="img/braveman.ico">
     <link href="css/bootstrap.css" rel="stylesheet" type="text/css">
     <link href="css/gallery2.css" rel="stylesheet" type="text/css">
-
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 </head>
 
 <body>
@@ -95,6 +95,20 @@
                 nav.classList.toggle('active');
                 div.classList.toggle('active');
             });
+            
+            $('.gal section a').on('mouseover',function(){
+                $(this).find('img').css({
+                    filter:'grayscale(0%)'
+                });
+                    $(this).on('mouseleave',function(){
+                        $(this).find('img').css({
+                        filter:'grayscale(80%)'
+                    });
+                });
+            });
+             
+            
+            
         </script>
     </main>
 </body></html>

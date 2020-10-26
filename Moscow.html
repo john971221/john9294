@@ -3,7 +3,9 @@
 <head>
     <meta charset="UTF-8">
     <title>Document</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="" content="width=device-width, initial-scale=1">
+    
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     
     <link href="css/bootstrap.css" rel="stylesheet" type="text/css">
     
@@ -55,20 +57,25 @@
         </div>
         
         <div class="imgs">
-
-           <h2>○Days◑</h2>
+            <h2></h2>
+           <h2>○<span id="○">Days◑</span></h2>
+           <div class="Days">
             <img src="img/Neo moscow/1.jpg">
             <img src="img/Neo moscow/2.jpg">
             <img src="img/Neo moscow/3.jpg">
             <img src="img/Neo%20moscow/4.jpg">
             <img src="img/Neo%20moscow/5.jpg">
             <img src="img/Neo%20moscow/6.jpg">
-            <h2>◑Afternoon◐</h2>
+        </div>
+            <h2>◑<span id="◑">Afternoon◐</span></h2>
+            <div class="Afternoon">
             <img src="img/Neo%20moscow/7.jpg">
             <img src="img/Neo%20moscow/8.jpg">
             <img src="img/Neo%20moscow/9.jpg">
             <img src="img/Neo%20moscow/10.jpg">
-            <h2>◐Night●</h2>
+        </div>
+            <h2><span id="◐">◐Night</span>●</h2>
+            <div class="Night">
             <img src="img/Neo%20moscow/11.jpg">
             <img src="img/Neo%20moscow/12.jpg">
             <img src="img/Neo%20moscow/13.jpg">
@@ -76,12 +83,20 @@
             <img src="img/Neo%20moscow/15.jpg">
             <img src="img/Neo%20moscow/16.jpg">
             <img src="img/Neo%20moscow/17.jpg">
-            <img src="img/Neo%20moscow/18.jpg">
+            
+        </div>
  
 
         </div>
     </main>
-    
+
+    <footer>
+        <img src="img/Neo%20moscow/18.jpg">
+        <h2>Martin Garrix
+        June.09.2018
+        In Moscow</h2>
+    </footer>
+
 
     
     
@@ -99,6 +114,90 @@
                 nav.classList.toggle('active');
                 div.classList.toggle('active');
             });
+            
+            function aa(){
+                $('main .upban').css({
+                    height:'600px'
+                })
+                $('main .upban img').css({
+                    top:'330px',
+                    transition:'.7s'
+                })  
+            };
+            aa();
+
+            
+            window.addEventListener('scroll',function(){
+                var decoH1 = document.querySelectorAll('main h1');
+                if(this.scrollY >= 1200){
+                    decoH1[0].style = 
+                    '-webkit-text-stroke: 5px #ffbc00;'
+                    +'transition-duration:1s'
+                    decoH1[1].style = 
+                    'transition-delay:1s;'
+                    +'transition-duration:1s;'
+                    +'-webkit-text-stroke: 5px #cd1803;';
+                }
+                console.log(this.scrollY)
+            });
+            var aN = 0;
+            var bN = 0;
+            var cN = 0;
+            $('main .imgs h2').eq(1).on({
+                mouseenter:function(el){
+                    $('#○').fadeIn(600);
+                },
+                click:function(){
+                    aN++;
+                },
+                mouseleave:function(){
+                    if(aN == 0){
+                        $('#○').fadeOut(600);}
+                    else{}
+                }
+            });
+            $('main .imgs h2').eq(1).on('click',function(el){
+                $('#○').delay(100).fadeIn(1000);
+                $('.Days').delay(600).slideDown(3000);
+
+            });
+            $('main .imgs h2').eq(2).on({
+                mouseenter:function(){
+                    $('#◑').fadeIn(600);
+                },
+                click:function(){
+                    bN++
+                },
+                mouseleave:function(){
+                    if( bN == 0 ){
+                        $('#◑').fadeOut(600); 
+                    }
+                    else{}
+                }
+            })
+            $('main .imgs h2').eq(2).on('click',function(el){
+                $('#◑').delay(100).fadeIn(1000);
+                $('.Afternoon').delay(600).slideDown(3000);
+            });
+            $('main .imgs h2').eq(3).on({
+                mouseenter:function(){
+                    $('#◐').fadeIn(600);
+                },
+                click:function(){
+                    cN++
+                },
+                mouseleave:function(){
+                    if(cN==0){
+                        $('#◐').fadeOut(600);
+                    }
+                    else{}
+                }
+            })
+            $('main .imgs h2').eq(3).on('click',function(el){
+                $('#◐').delay(100).fadeIn(1000);
+                $('.Night').delay(600).slideDown(3000);
+            });
+            
         </script>
 </body>
 </html>

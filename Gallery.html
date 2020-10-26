@@ -1,11 +1,12 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
 
     <meta charset="UTF-8">
 
     <title>NabiMiao</title>
-    
+
     <link rel="shortcut icon" href="img/favicon.ico">
 
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -16,6 +17,7 @@
 
     <link href="css/stylebox.css" rel="stylesheet" type="text/css">
 
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 
 
 
@@ -39,21 +41,24 @@
             <a href="#">
                 <span></span>
                 <span></span>
-                <span></span></a>
+                <span></span>
+            </a>
             <div class="burger">
                 <a href="Gallery.html">Gallery & artist</a>
                 <a href="Exhibition.html">Exhibition</a>
             </div>
         </nav>
         <div class="logo">
-            <a href="index.html"><h1>Culă</h1></a>
+            <a href="index.html">
+                <h1>Culă</h1>
+            </a>
         </div>
         <div class="left-button">
             <input type=radio name="miao" id="miao">
-            <input type=radio name="miao" id="gtfo">  
-               <div class="logbtn">
+            <input type=radio name="miao" id="gtfo">
+            <div class="logbtn">
                 <div class=log_in>
-                   <label for="gtfo">Exit</label>
+                    <label for="gtfo">Exit</label>
                     <input type="email" name="email" id="email" placeholder="#Your email address" autocomplete="off" maxlength="30">
                     <input type="password" name="password" placeholder="#Your passward" maxlength="16">
                     <input type="submit" name="Log in" value="Log in">
@@ -90,15 +95,15 @@
 
             <div class="gal">
                 <div class="gal1 col-md-1 pada">
-                    <a href="#"><img src="img/RainydaysArtboard%202%20copy%202.jpg"> </a>
+                    <a href="#"><img src="img/Transmilenio.jpg"> </a>
                 </div>
 
                 <div class="gal2 col-md-1 pada">
-                    <a href="#"><img src="img/Kthmandu.jpgArtboard%202%20copy.jpg"> </a>
+                    <a href="#"><img src="img/Theone.jpg"> </a>
                 </div>
 
                 <div class="gal3 col-md-1 pada">
-                    <a href="#"><img src="img/Neo-moscow.jpg"> </a>
+                    <a href="#"><img src="img/Isolated.jpg"> </a>
                 </div>
                 <div class="btn"><a href="Gallery2.html">more</a></div>
             </div>
@@ -129,7 +134,7 @@
 
             <div class="gal">
                 <div class="gal1 col-md-1 pada">
-                    <a href="#"><img src="img/Sile'it%20battle.jpg"> </a>
+                    <a href="#"><img src="img/Transmilenio.jpg"> </a>
                 </div>
 
                 <div class="gal2 col-md-1 pada">
@@ -154,8 +159,25 @@
             nav.classList.toggle('active');
             div.classList.toggle('active');
         });
+
+
+        
+
+    </script>
+    
+    <script>
+    $('main .gal a img').on('mouseover', function() {
+                    $(this).css('filter', 'grayscale(0%)');
+    });
+        $('main .gal a img').on('mouseleave', function() {
+                    $(this).css('filter', 'grayscale(40%)');
+    });
+        
+        
+    
     </script>
 
 
 </body>
+
 </html>

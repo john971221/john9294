@@ -63,7 +63,10 @@ main p,strong,a{color:#999999;}
 main .onerow {
     margin: 0 auto;
 }
-
+main > div .col-md-3.textar{
+    
+    flex:0 0 auto;
+}
 main > div .col-md-3 {
     display: inline-block;
     background: RGB(0, 0, 0, 0.4)
@@ -80,7 +83,7 @@ main > div .col-md-3 a img {
 }
 
 main > div .col-md-3 .textar {
-    width: 43%;
+    width: 43% ;
     float: right;
     display: flex;
     flex-direction: column;
@@ -102,13 +105,14 @@ main .col-md-10 {
     display: flex;
     align-content: center;
     align-items: center;
-    justify-content: center;
+
     margin-bottom: 90px
 }
 
 main .gal {
     transform-style: preserve-3d;
     position: relative;
+    
 }
 
 
@@ -117,6 +121,9 @@ main .gal a {
     height: 420px;
     display: inline-block;
 }
+main .gal a img {
+        filter: grayscale(40%);
+    }
 
 main .gal img {
     width: 300px;
@@ -126,23 +133,26 @@ main .gal img {
 }
 
 
-main .gal:hover .gal2 img {
+main .gal div{
+    transition: .7s;
+}
+main .gal:hover .gal2 {
     margin-left: 240px;
 }
 
-main .gal:hover .gal3 img {
-    margin-left: 480px;
+main .gal:hover .gal3 {
+    margin-left: 240px;
 }
 
-main .gal .gal1 a img:hover {
+main .gal .gal1:hover a img{
     transform: scale(1.07);
 }
 
-main .gal .gal2 a img:hover {
+main .gal .gal2:hover a img{
     transform: scale(1.07);
 }
 
-main .gal .gal3 a img:hover {
+main .gal .gal3:hover a img{
     transform: scale(1.07);
 }
 
@@ -153,12 +163,15 @@ main .gal .btn {
     left: 37%;
     opacity: 0;
     transition: .7s;
+    width: 0;
+    height: 0;
 }
 
 main .gal:hover .btn {
     left: 83%;
     opacity: 1;
 }
+main .gal .btn a{width:auto;height:auto;}
 
 @media (min-width : 481px) and (max-width : 1280px) {
     body {
@@ -237,6 +250,10 @@ main .gal:hover .btn {
 
     #g_2 {
         position: relative;
+    }
+    
+    main .gal a img {
+        opacity: 0.7;
     }
         main .gal .btn {
     position: static;
@@ -349,17 +366,7 @@ main .gal:hover .btn {
     left: 83%;
     opacity: 1;
 }
-.bg h2:nth-of-type(odd) {
-    transform: translateX(-800px);
-}
 
-   @keyframes dddj {
-    from {
-        transform: translateX(-2000px);
-    }
-
-    to {
-        transform: translateX(-800px);
-    }
-}
-
+    
+    
+};

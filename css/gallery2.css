@@ -32,6 +32,10 @@ main .slide .gal {
     transition: 1s;
 }
 
+main .slide .gal img{
+    filter: grayscale(80%)
+}
+
 main .slide .gal section {
     width: 100%;
     position: absolute;
@@ -143,7 +147,8 @@ main .indie label:after {
 
     main .slide .gal img {
         max-width: 80%;
-        padding-bottom: 10%
+        padding-bottom: 10%;
+        filter: grayscale(80%)
     }
 
     main .slide .gal section {
